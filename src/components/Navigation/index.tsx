@@ -12,7 +12,7 @@ const Navigation = () => {
     <NavBar data-testid='navigation'>
       <Content>
         <Logo src={logo} alt='logo'/>
-        <HamburgerButton className="hamburger"
+        <HamburgerButton
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}

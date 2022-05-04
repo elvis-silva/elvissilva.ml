@@ -52,7 +52,27 @@ export const Content = styled.div`
 
 export const HamburgerButton = styled.button`
 
-  display: block;
-  
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #129624;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+
+  @media (max-width: 550px) {
+    display: block;
+  }
+
+  &:hover {
+    background-color: #36af26;
+  }
 
 `
+
