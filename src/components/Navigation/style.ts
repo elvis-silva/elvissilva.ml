@@ -2,6 +2,24 @@ import styled from 'styled-components'
 
 export const NavBar = styled.nav`
 
+  position: fixed;  
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2b2b2b;
+
+`
+
+export const Logo = styled.img`
+
+  width: 10rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+
+`
+
+export const Content = styled.div`
+
   display: flex;
   padding: 0.5rem;
   justify-content: space-between;
@@ -12,7 +30,6 @@ export const NavBar = styled.nav`
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #2b2b2b;
   }
 
   & li {
@@ -33,11 +50,9 @@ export const NavBar = styled.nav`
 
 `
 
-export const Logo = styled.img`
+export const HamburgerButton = styled.button`
 
-  width: 10rem;
-  margin-left: 0.5rem;
-  cursor: pointer;
+  display: block;
+  
 
 `
-

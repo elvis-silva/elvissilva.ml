@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Navigation from './index'
+import Navigation from '../components/Navigation'
 
 test('show logo in the document', () => {
   render(<Navigation />)
