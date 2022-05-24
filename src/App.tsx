@@ -1,4 +1,5 @@
 import { AppContainer } from './App.style'
+import Home from './components/Home'
 import About from './components/About'
 import Features from './components/Features'
 import Gallery from './components/Gallery'
@@ -13,6 +14,7 @@ function App() {
       <Navigation />
       <Header />
       <Features />
+      <Home />
       <About />
       <Gallery />
       <Contact />

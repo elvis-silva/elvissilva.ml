@@ -19,6 +19,12 @@ test('show features component in the app', () => {
   expect(features).toBeInTheDocument()
 })
 
+test('show home component in the app', () => {
+  render(<App />)
+  let home = screen.getByTestId('home')
+  expect(home).toBeInTheDocument()
+})
+
 test('show about component in the app', () => {
   render(<App />)
   let about = screen.getByTestId('about')
