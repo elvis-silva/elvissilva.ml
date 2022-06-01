@@ -15,15 +15,15 @@ const Home = () => {
   )
 
   const name: string = 'Elvis_Silva \n'
-  for (let i = 0; i < name.length; i++) {
-    if(name[i] === '\n') {
+  for (const element of name) {
+    if(element === '\n') {
       letters.push(
         <br 
           key={Math.random().toString()}
           style={{ backgroundColor: "transparent"}}
         />
       )
-    } else if (name[i] === ' ') {
+    } else if (element === ' ') {
       letters.push(
         <span
           key={Math.random().toString()}
@@ -34,7 +34,7 @@ const Home = () => {
       )
     } else {
       letters.push(
-        <CustomLetter key={Math.random().toString()}>{name[i]}</CustomLetter>
+        <CustomLetter key={Math.random().toString()}>{element}</CustomLetter>
       )
     }
   }
@@ -42,16 +42,15 @@ const Home = () => {
   const typewritterStrings: string[] = [
     "Freelancer",
     "Programador",
-    "Desenvolvedor de Software",
-    "Desenvolvedor de Websites",
-    "Desenvolvedor de Apps",
+    "Desenvolvedor",
   ]
 
   const [text, setText] = useState(typewritterStrings[0])
   const [direction, setDirection] = useState('forward')
   const index = useRef(0)
 
-  const timeInterval: number = 3900;
+  const timeInterval: number = 3900
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (index.current >= typewritterStrings.length) {
@@ -71,14 +70,14 @@ const Home = () => {
     }, timeInterval);
     return () => {
       clearInterval(interval);
-    };
-  }, [direction]);
+    }
+  }, [direction])
 
   return (
     <div data-testid="home">
       <HomeBody>
         <HomeContainer>
-          <span style={{ fontSize: 20, color: "white" }}>Olá, 👋</span>
+          <span>Olá, 👋</span>
           <div>{letters}</div>
           <TypeWriter
             key={Math.random().toString()}

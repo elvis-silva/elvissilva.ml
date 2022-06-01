@@ -14,7 +14,6 @@ export const HomeBody = styled.div`
     content: "<Home>";
     color: #65d865;
     font-size: 1.8rem;
-    margin-left: -1.5em;
     position: absolute;
 
     @media screen and (max-width: 768px) {
@@ -28,7 +27,7 @@ export const HomeBody = styled.div`
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
-    right: 0.5em;
+    left: 2em;
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
@@ -45,8 +44,8 @@ export const HomeBody = styled.div`
 
 export const HomeContainer = styled.div<{ typing_direction?: string }>`
 
-  padding-top: 7em;
-  padding-left: 4em;
+  padding-top: 4em;
+  padding-left: 7em;
   display: flex;
   flex-direction: column;
   min-width: 50%;
@@ -56,6 +55,7 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
     color: #65d865;
     font-size: 1.8rem;
     margin-left: -2em;
+    margin-bottom: 1em;
   
     @media screen and (max-width: 768px) {
       align-self: flex-start;
@@ -67,11 +67,13 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
     content: "</div>";
     color: #65d865;
     font-size: 1.8rem;
-    align-self: flex-end;
+    align-self: flex-start;
+    margin-left: -2em;
+    margin-top: 1em;
 
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: 2em;
+      margin-left: -2em;
     }
   }
 

@@ -8,14 +8,14 @@ export const AboutBody = styled.div`
   background-color: #2b2b2b;
   min-height: 100%;
   height: fit-content;
-  padding-bottom: 7rem;
+  padding-bottom: 4rem;
   position: relative;
 
   &:before {
-    content: "<About>";
+    content: '<About>';
     color: #65d865;
     font-size: 1.8rem;
-    margin-left: -1.5em;
+    margin-left: 0em;
     position: absolute;
 
     @media screen and (max-width: 768px) {
@@ -26,12 +26,12 @@ export const AboutBody = styled.div`
   }
 
   &:after {
-    content: "</About>";
+    content: '</About>';
     color: #65d865;
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
-    right: 0.5em;
+    left: 2em;
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
@@ -49,11 +49,39 @@ export const AboutBody = styled.div`
 export const AboutContainer = styled.div`
 
   padding-top: 3em;
-  padding-left: 3.5rem;
+  padding-left: 7rem;
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 50%;
+
+  &:before {
+    content: "<div>";
+    color: #65d865;
+    font-size: 1.8rem;
+    margin-left: -2em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+  
+    @media screen and (max-width: 768px) {
+      align-self: flex-start;
+      margin-left: 2em;
+    }
+  }
+
+  &:after {
+    content: "</div>";
+    color: #65d865;
+    font-size: 1.8rem;
+    align-self: flex-start;
+    margin-left: -2em;
+    margin-top: 1em;
+
+    @media screen and (max-width: 768px) {
+      align-self: flex-start;
+      margin-left: -2em;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     padding-top: 1em;
@@ -84,6 +112,24 @@ export const TextSection = styled.div`
   padding-top: 1.3em;
   line-height: 1.4em;
   color: #65d865;
+
+`
+
+export const PhotoContainer = styled.div`
+
+  padding-top: 3em;
+  padding-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+
+@media screen and (max-width: 768px) {
+  padding-top: 1em;
+  padding-left: 0;
+  align-self: center;
+  width: auto;
+}
 
 `
 
