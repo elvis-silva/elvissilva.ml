@@ -183,6 +183,7 @@ export const SubmitRow = styled.div`
 export const SubmitButton = styled.button`
 
   background-color: #65d865;
+  border-color: #65d865;
   color: #2b2b2b;
   border-radius: 0.5em;
   box-sizing: border-box;
@@ -203,6 +204,46 @@ export const SubmitButton = styled.button`
   @media screen and (max-width: 768px) {
     align-self: center;
     width: 100%;
+  }
+
+`
+
+export const IconContainer = styled.div`
+
+  display: flex;
+  align-self: flex-start;
+  width: fit-content;
+  padding-left: 2em;
+  gap: 0.5em;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
+
+`
+
+export const Icon = styled.div`
+
+  background-color: transparent;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+
+`
+
+export const IconText = styled.div`
+
+  color: #65d865;
+  font-size: 1.7em;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.3em;
   }
 
 `
