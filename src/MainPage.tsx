@@ -1,9 +1,7 @@
-import { useState }  from 'react'
-
 import { AppContainer } from './App.style'
 import Home from './components/Home'
 import About from './components/About'
-import Header from './components/Header'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -13,6 +11,7 @@ const MainPage = () => {
     <AppContainer>
       <Home />
       <About />
+      <Skills />
       <Contact />
       <Footer />
     </AppContainer>
