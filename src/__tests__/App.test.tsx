@@ -1,6 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import App from '../App'
 
+test('show main page in document', () => {
+  render(<App />)
+  let mainPage = screen.getByTestId(/main-page/i)
+  expect(mainPage).toBeInTheDocument()
+})
+
 test('show navbar component in the app', () => {
   render(<App />)
   let navbar = screen.getByTestId('navbar')
@@ -17,6 +23,18 @@ test('show about component in the app', () => {
   render(<App />)
   let about = screen.getByTestId('about')
   expect(about).toBeInTheDocument()
+})
+
+test('show skills component in the app', () => {
+  render(<App />)
+  let skills = screen.getByTestId('skills')
+  expect(skills).toBeInTheDocument()
+})
+
+test('show projects component in the app', () => {
+  render(<App />)
+  let projects = screen.getByTestId('projects')
+  expect(projects).toBeInTheDocument()
 })
 
 test('show contact component in the app', () => {

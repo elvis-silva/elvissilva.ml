@@ -5,5 +5,7 @@ export const AppContainer = styled.div`
   background-color: #2b2b2b;
   color: #65d865;
   padding-bottom: 5px;
+  max-width: 1128px;
+  margin: 0 auto;
 
 `

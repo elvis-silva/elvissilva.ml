@@ -11,7 +11,7 @@ export const ContactBody = styled.div`
 
   &:before {
     content: '<Contact>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     left: 2em;
     position: absolute;
@@ -23,7 +23,7 @@ export const ContactBody = styled.div`
 
   &:after {
     content: '</Contact>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     left: 2em;
     position: absolute;
@@ -51,7 +51,7 @@ export const LeftContainer = styled.div`
 
   &:before {
     content: "<div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -64,7 +64,7 @@ export const LeftContainer = styled.div`
 
   &:after {
     content: "</div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;

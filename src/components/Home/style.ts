@@ -12,7 +12,7 @@ export const HomeBody = styled.div`
 
   &:before {
     content: "<Home>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     position: absolute;
 
@@ -23,7 +23,7 @@ export const HomeBody = styled.div`
 
   &:after {
     content: "</Home>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
@@ -52,7 +52,7 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
 
   &:before {
     content: "<div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -65,7 +65,7 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
 
   &:after {
     content: "</div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;

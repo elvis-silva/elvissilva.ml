@@ -11,7 +11,7 @@ export const SkillsBody = styled.div`
 
   &:before {
     content: '<Skills>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     position: absolute;
@@ -24,7 +24,7 @@ export const SkillsBody = styled.div`
 
   &:after {
     content: '</Skills>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     position: absolute;
@@ -59,7 +59,7 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
 
   &:before {
     content: "<div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -72,7 +72,7 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
 
   &:after {
     content: "</div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;

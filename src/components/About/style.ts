@@ -13,7 +13,7 @@ export const AboutBody = styled.div`
 
   &:before {
     content: '<About>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: 0em;
     position: absolute;
@@ -27,7 +27,7 @@ export const AboutBody = styled.div`
 
   &:after {
     content: '</About>';
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
@@ -57,7 +57,7 @@ export const AboutContainer = styled.div`
 
   &:before {
     content: "<div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -71,7 +71,7 @@ export const AboutContainer = styled.div`
 
   &:after {
     content: "</div>";
-    color: #65d865;
+    color: #659965;
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;
@@ -121,6 +121,7 @@ export const PhotoContainer = styled.div`
   padding-left: 3.5rem;
   display: flex;
   flex-direction: column;
+  align-self: center;
   height: 100%;
   width: 50%;
 
@@ -143,6 +144,23 @@ export const Photo = styled.img`
   transition: 0.3s ease-in;
   align-self: center;
   margin-top: 6.6em;
+
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 768px) {
+    filter: none;
+    margin-top: 0;
+
+    &:hover {
+      filter: none;
+      transform: none;
+    }
+  }
 
 `
 

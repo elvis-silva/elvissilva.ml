@@ -6,7 +6,7 @@ import Logo from '../../assets/images/logo.png'
 export const Nav = styled.nav`
 
   background-color: #2b2b2b;
-  opacity: 85%;
+  opacity: 98%;
   height: 5rem;
   display: flex;
   justify-content: center;
@@ -29,8 +29,12 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   height: 5rem;
   width: 100%;
-  padding: 0 3.5rem 0 3.5rem;
+  padding: 0 7rem 0 7rem;
   z-index: 1;
+
+  @media screen and (max-width: 1128px) {
+    padding: 0 3.5rem 0 3.5rem;
+  }
 
 `
 

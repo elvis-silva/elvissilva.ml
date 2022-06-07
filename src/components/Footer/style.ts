@@ -21,14 +21,12 @@ export const FooterBoby = styled.div`
 
 export const FooterText = styled.div`
 
-  padding: 0 3.5em 0 3.5em;
   color: #65d865;
   font-size: 1em;
   align-self: center;
   text-align: center;
 
 `
-
 
 export const FooterStyled = styled.footer`
 
