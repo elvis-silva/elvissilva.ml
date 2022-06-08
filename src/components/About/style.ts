@@ -36,7 +36,7 @@ export const AboutBody = styled.div`
     @media screen and (max-width: 768px) {
       left: 0.5em;
       font-size: 1.2rem;
-      bottom: 2em;
+      bottom: 2.5em;
     }
   }
 
@@ -137,13 +137,37 @@ export const PhotoContainer = styled.div`
   height: 100%;
   width: 50%;
 
-@media screen and (max-width: 768px) {
-  padding-top: 1em;
-  padding-left: 0;
-  align-self: center;
-  width: auto;
+  &:before {
   
-}
+    @media screen and (max-width: 768px) {
+      content: "<div>";
+      color: var(--secondary-color);
+      align-self: flex-start;
+      margin-left: 1.2em;
+      font-size: 1.2rem;
+      margin-top: -1.5em;
+    }
+  }
+
+  &:after {
+
+    @media screen and (max-width: 768px) {
+      content: "</div>";
+      color: var(--secondary-color);
+      align-self: flex-start;
+      margin-left: 1.2em;
+      font-size: 1.2rem;
+      margin-top: 1.5em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: -1em;
+    padding-left: 0;
+    align-self: center;
+    width: auto;
+    width: 100%;
+  }
 
 `
 

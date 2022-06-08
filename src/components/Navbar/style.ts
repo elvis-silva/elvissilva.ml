@@ -33,7 +33,7 @@ export const NavContainer = styled.div`
   z-index: 1;
 
   @media screen and (max-width: 1128px) {
-    padding: 0 3.5rem 0 3.5rem;
+    padding: 0 1.5rem 0 1.5rem;
   }
 
 `

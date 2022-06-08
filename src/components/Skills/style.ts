@@ -34,7 +34,7 @@ export const SkillsBody = styled.div`
     @media screen and (max-width: 768px) {
       left: 4.5em;
       font-size: 1.2rem;
-      bottom: 7em;
+      bottom: 2.5em;
     }
   }
 
@@ -118,6 +118,10 @@ export const Link = styled.a`
   color: var(--primary-color);
   font-weight: bold;
 
+  :target {
+    color: var(--secondary-color);
+  }
+
   :active {
     color: var(--secondary-color);
   }
@@ -137,10 +141,35 @@ export const SphereContainer = styled.div`
   width: 50%;
 
   @media screen and (max-width: 768px) {
-    width: auto;
+    width: 100%;
     align-self: center;
     padding-left: 0;
-    padding-top: 2em;
+    margin-top: -5em;
+
+    &:before {
+  
+  @media screen and (max-width: 768px) {
+    content: "<div>";
+    color: var(--secondary-color);
+    align-self: flex-start;
+    margin-left: 1.5em;
+    font-size: 1.2rem;
+    margin-top: -1.5em;
+  }
+}
+
+&:after {
+
+  @media screen and (max-width: 768px) {
+    content: "</div>";
+    color: var(--secondary-color);
+    align-self: flex-start;
+    margin-left: 1.5em;
+    font-size: 1.2rem;
+    margin-top: -1em;
+  }
+}
+
   }
 
 `

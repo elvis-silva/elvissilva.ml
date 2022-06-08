@@ -18,6 +18,8 @@ export const ContactBody = styled.div`
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
+      font-size: 1.2rem;
+      margin-top: 1em;
     }
   }
 
@@ -31,6 +33,7 @@ export const ContactBody = styled.div`
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
+      font-size: 1.2rem;
     }
   }
 
@@ -58,7 +61,9 @@ export const LeftContainer = styled.div`
   
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: 2em;
+      margin-left: 0.5em;
+      margin-top: 0;
+      font-size: 1.2rem;
     }
   }
 
@@ -73,14 +78,18 @@ export const LeftContainer = styled.div`
 
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: -2em;
+      margin-left: 0.5em;
+      font-size: 1.2rem;
     }
   }
 
   @media screen and (max-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
-    width: fit-content;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 2em;
+    padding-right: 2.75em;
   }
 
 `
@@ -96,7 +105,31 @@ export const RightContainer = styled.div`
   gap: 2em;
 
   @media screen and (max-width: 768px) {
-    width: auto;
+    width: 100%;
+
+    &:before {
+  
+      @media screen and (max-width: 768px) {
+        content: "<div>";
+        color: var(--secondary-color);
+        align-self: flex-start;
+        margin-left: 2.1em;
+        font-size: 1.2rem;
+        margin-top: -3.5em;
+      }
+    }
+
+    &:after {
+
+      @media screen and (max-width: 768px) {
+        content: "</div>";
+        color: var(--secondary-color);
+        align-self: flex-start;
+        margin-left: 2.1em;
+        font-size: 1.2rem;
+        margin-top: 0;
+      }
+    }
   }
 
 `
@@ -106,6 +139,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   padding-top: 2em;
+  width: 100%;
 
 `
 
@@ -120,6 +154,7 @@ export const PersonInfo = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    gap: 1.1em;
   }
 
 `
@@ -176,6 +211,9 @@ export const SubmitRow = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    align-self: end;
+    width: 100%;
+    padding: 0 0.2em;
   }
 
 `
@@ -202,8 +240,9 @@ export const SubmitButton = styled.button`
   }
 
   @media screen and (max-width: 768px) {
-    align-self: center;
-    width: 100%;
+    align-self: flex-end;
+    width: 7em;
+    height: 2.5em;
   }
 
 `
@@ -219,6 +258,7 @@ export const IconContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     padding-left: 0;
+    margin-left: 2em; ;
   }
 
 `

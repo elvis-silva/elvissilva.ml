@@ -139,10 +139,18 @@ export const TypeWriter = styled.div<{ typing_direction?: string }>`
 
 `
 
-export const StyledText = styled.span`
+export const StyledText = styled.p<{ weight?: string }>`
 
   font-size: 2.8em;
   color: white;
+
+  ${({ weight }) => 
+    weight === 'bold' && `
+    
+    font-weight: bold;
+    
+    `
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 1.5em;

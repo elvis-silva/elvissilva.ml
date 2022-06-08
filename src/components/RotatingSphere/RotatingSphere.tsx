@@ -12,6 +12,7 @@ function RotatingSphere(props: any) {
           "Java",
           "Typescript",
           "Javascript",
+          "NodeJS",
           "MySQL",
           "React",
           "HTML",
@@ -24,6 +25,7 @@ function RotatingSphere(props: any) {
           "Dados",
           "Algoritmos",
           "MongoDB",
+          "Android",
         ],
         {
           // eslint-disable-next-line no-restricted-globals

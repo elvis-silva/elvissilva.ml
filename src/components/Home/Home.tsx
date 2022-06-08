@@ -1,39 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
-import { CustomLetter } from '../Letter/style'
 import { HomeBody, HomeContainer, TypeWriter, StyledText } from './style'
 
 const Home = () => {
 
-  const letters: JSX.Element[] = []
-
-  const name: string = 'Elvis_Silva \n'
-  for (const element of name) {
-    if(element === '\n') {
-      letters.push(
-        <br 
-          key={Math.random().toString()}
-          style={{ backgroundColor: "transparent"}}
-        />
-      )
-    } else if (element === ' ') {
-      letters.push(
-        <StyledText
-          key={Math.random().toString()}
-        >
-          &nbsp;
-        </StyledText>
-      )
-    } else {
-      letters.push(
-        <CustomLetter key={Math.random().toString()}>{element}</CustomLetter>
-      )
-    }
-  }
-
   const typewritterStrings: string[] = [
     "Freelancer",
     "Programador",
-    "Desenvolvedor",
+    "Developer",
+    "Fullstack"
   ]
 
   const [text, setText] = useState(typewritterStrings[0])
@@ -62,17 +36,16 @@ const Home = () => {
     return () => {
       clearInterval(interval);
     }
-  }, [direction])
+  }, [direction, text, index, timeInterval, typewritterStrings])
 
   return (
     <div data-testid="home">
       <HomeBody>
         <HomeContainer>
           <StyledText>Olá, 👋 sou</StyledText>
-          <StyledText>{letters}</StyledText>
-          <TypeWriter
-            key={Math.random().toString()}
-            typing_direction={direction}
+          <StyledText weight='bold'>Elvis Silva</StyledText>
+          <TypeWriter key={Math.random().toString()} 
+          typing_direction={direction}
           >
             {text}
           </TypeWriter>

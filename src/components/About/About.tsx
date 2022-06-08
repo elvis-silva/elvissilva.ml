@@ -1,5 +1,14 @@
 import photo from '../../assets/images/me.jpg'
-import { AboutBody, AboutContainer, PhotoContainer, StyledHeading, Photo, TextSection } from "./style"
+import { Link } from '../Skills/style'
+import { 
+  AboutBody, 
+  AboutContainer, 
+  PhotoContainer, 
+  StyledHeading, 
+  Photo, 
+  TextSection 
+} from "./style"
+
 
 const About = () => {
 
@@ -12,10 +21,10 @@ const About = () => {
             Sou um desenvolvedor de software e estudante apaixonado pela arte da programação residente no Brasil.
             <br/>
             <br/>
-            Atualmente, estou trabalhando por conta própria criando pequenos sites e refatorando códigos desde 2017. Adoro resolver problemas técnicos, pesquisar e ajudar no desenvolvimento de novos softwares e tecnologias. 
+            Atualmente, estou trabalhando por conta própria criando pequenos sites e refatorando códigos desde 2017. Antes disso criei alguns aplicativos Android em Java que podem ser conferidos no meu <Link target={'_blank'} href="https://github.com/elvis-silva">Github</Link>. 
             <br/>
             <br/>
-            Procuro sempre me desafiar a melhorar cada vez mais, sendo proativo, diligente, responsável e comprometido em encontrar a solução mais econômica e eficiente pra qualquer problema.
+            Adoro resolver problemas técnicos, pesquisar e ajudar no desenvolvimento de novos softwares e tecnologias. Busco sempre me desafiar a melhorar cada vez mais, sendo proativo, diligente, responsável e comprometido em encontrar a solução mais econômica e eficiente pra qualquer problema.
           </TextSection>
         </AboutContainer>
         <PhotoContainer>
