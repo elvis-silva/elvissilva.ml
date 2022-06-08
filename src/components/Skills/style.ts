@@ -4,7 +4,7 @@ export const SkillsBody = styled.div`
 
   display: flex;
   flex-direction: row;
-  padding: 0 3.5rem 2em 3.5rem;
+  padding: 0 3.5rem 0 3.5rem;
   min-height: 100%;
   position: relative;
   margin-left: 3.7rem;
@@ -40,7 +40,8 @@ export const SkillsBody = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin: 0 -2.5em;
+    margin-left: -2.5em;
+    padding-right: 1em;
   }
 
 `

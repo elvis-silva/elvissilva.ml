@@ -89,7 +89,7 @@ export const LeftContainer = styled.div`
     width: 100%;
     margin-left: 0;
     padding-left: 2em;
-    padding-right: 2.75em;
+    padding-right: 2em;
   }
 
 `
@@ -106,6 +106,7 @@ export const RightContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    flex-direction: column;
 
     &:before {
   
@@ -257,8 +258,9 @@ export const IconContainer = styled.div`
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
-    padding-left: 0;
-    margin-left: 2em; ;
+    padding: 0.5em;
+    margin-left: 2em;
+    align-self: flex-start;
   }
 
 `
