@@ -41,6 +41,7 @@ export const ContactBody = styled.div`
     flex-direction: column;
     padding: 0 0 3rem 0;
     align-items: center;
+    margin-top: 2.5em;
   }
 
 `
