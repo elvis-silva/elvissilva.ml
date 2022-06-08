@@ -1,18 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { CustomLetter } from '../Letter/style'
-import { HomeBody, HomeContainer, TypeWriter } from './style'
+import { HomeBody, HomeContainer, TypeWriter, StyledText } from './style'
 
 const Home = () => {
 
   const letters: JSX.Element[] = []
-  letters.push(
-    <span
-      key={Math.random().toString()}
-      style={{ fontSize: 60, color: "white" }}
-    >
-      Sou{' '}
-    </span>
-  )
 
   const name: string = 'Elvis_Silva \n'
   for (const element of name) {
@@ -25,12 +17,11 @@ const Home = () => {
       )
     } else if (element === ' ') {
       letters.push(
-        <span
+        <StyledText
           key={Math.random().toString()}
-          style={{ backgroundColor: "transparent"}}
         >
           &nbsp;
-        </span>
+        </StyledText>
       )
     } else {
       letters.push(
@@ -77,8 +68,8 @@ const Home = () => {
     <div data-testid="home">
       <HomeBody>
         <HomeContainer>
-          <span>Olá, 👋</span>
-          <div>{letters}</div>
+          <StyledText>Olá, 👋 sou</StyledText>
+          <StyledText>{letters}</StyledText>
           <TypeWriter
             key={Math.random().toString()}
             typing_direction={direction}

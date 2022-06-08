@@ -3,7 +3,7 @@ import { ProjectsBody } from "./style"
 const Projects = () => {
   return (
     <ProjectsBody data-testid='projects'>
-
+      
     </ProjectsBody>
   )
 }

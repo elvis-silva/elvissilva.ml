@@ -12,18 +12,19 @@ export const HomeBody = styled.div`
 
   &:before {
     content: "<Home>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     position: absolute;
 
     @media screen and (max-width: 768px) {
       margin-left: 0.5em;
+      font-size: 1.2rem;
     }
   }
 
   &:after {
     content: "</Home>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
@@ -31,6 +32,7 @@ export const HomeBody = styled.div`
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
+      font-size: 1.2rem;
     }
   }
 
@@ -38,6 +40,7 @@ export const HomeBody = styled.div`
     flex-direction: column;
     padding: 0;
     padding-bottom: 4rem;
+
   }
 
 `
@@ -52,7 +55,7 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
 
   &:before {
     content: "<div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -60,20 +63,23 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
     @media screen and (max-width: 768px) {
       align-self: flex-start;
       margin-left: 2em;
+      font-size: 1.2rem;
+      margin-top: -1.5em;
     }
   }
 
   &:after {
     content: "</div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;
     margin-top: 1em;
 
     @media screen and (max-width: 768px) {
-      align-self: flex-start;
-      margin-left: -2em;
+      margin-left: 2em;
+      font-size: 1.2rem;
+      margin-bottom: -1.5em;
     }
   }
 
@@ -89,10 +95,10 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
 export const TypeWriter = styled.div<{ typing_direction?: string }>`
 
   font-size: 2.8em;
-  color: #65d865;
+  color: var(--primary-color);
   max-width: fit-content;
   overflow: hidden;
-  border-right: 0.15em solid #65d865;
+  border-right: 0.15em solid var(--primary-color);
   white-space: nowrap;
   letter-spacing: 0.05em;
 
@@ -124,11 +130,22 @@ export const TypeWriter = styled.div<{ typing_direction?: string }>`
 
   @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: #65d865; }
+    50% { border-color: var(--primary-color); }
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+
+`
+
+export const StyledText = styled.span`
+
+  font-size: 2.8em;
+  color: white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
   }
 
 `

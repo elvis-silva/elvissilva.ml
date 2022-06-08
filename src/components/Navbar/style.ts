@@ -71,7 +71,7 @@ export const NavItem = styled.li`
 
 export const NavLink = styled(LinkScroll)`
 
-  color: #65d865;
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -80,11 +80,11 @@ export const NavLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    border-bottom: 0.16em solid #65d865;
+    border-bottom: 0.16em solid var(--primary-color);
   }
 
   &:active {
-    border-bottom: 0.16em solid #65d865;
+    border-bottom: 0.16em solid var(--primary-color);
     font-weight: bold;
   }
 

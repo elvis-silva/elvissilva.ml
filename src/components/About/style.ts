@@ -13,21 +13,21 @@ export const AboutBody = styled.div`
 
   &:before {
     content: '<About>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: 0em;
     position: absolute;
 
     @media screen and (max-width: 768px) {
-      margin-top: -0.5em;
       margin-left: 0;
       left: 0.5em;
+      font-size: 1.2rem;
     }
   }
 
   &:after {
     content: '</About>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     position: absolute;
     bottom: 0px;
@@ -35,6 +35,8 @@ export const AboutBody = styled.div`
 
     @media screen and (max-width: 768px) {
       left: 0.5em;
+      font-size: 1.2rem;
+      bottom: 2em;
     }
   }
 
@@ -57,21 +59,24 @@ export const AboutContainer = styled.div`
 
   &:before {
     content: "<div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
     padding-top: 0.5em;
+
   
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: 2em;
+      margin-left: 1.2em;
+      font-size: 1.2rem;
+      margin-top: 0.8em;
     }
   }
 
   &:after {
     content: "</div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;
@@ -79,7 +84,8 @@ export const AboutContainer = styled.div`
 
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: -2em;
+      margin-left: 1.2em;
+      font-size: 1.2rem;
     }
   }
 
@@ -97,21 +103,27 @@ export const StyledHeading = styled.h1`
   display: flex;
   font-size: 4em;
   align-items: center;
-  color: #65d865;
+  color: var(--primary-color);
 
   @media screen and (max-width: 768px) {
-    font-size: 2.5em;
+    font-size: 1.8em;
     align-self: center;
   }
 
 `
 
-export const TextSection = styled.div`
+export const TextSection = styled.p`
 
-  font-size: 1.3em;
+  font-size: 1.4em;
   padding-top: 1.3em;
   line-height: 1.4em;
-  color: #65d865;
+  text-align: justify;
+  color: var(--primary-color);
+
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    padding: 0.8em 0.8em;
+  }
 
 `
 
@@ -130,6 +142,7 @@ export const PhotoContainer = styled.div`
   padding-left: 0;
   align-self: center;
   width: auto;
+  
 }
 
 `
@@ -154,7 +167,9 @@ export const Photo = styled.img`
 
   @media screen and (max-width: 768px) {
     filter: none;
-    margin-top: 0;
+    margin-top: 1em;
+    height: 15rem;
+    width: auto;
 
     &:hover {
       filter: none;
@@ -167,7 +182,7 @@ export const Photo = styled.img`
 export const Container = styled.div`
 
   margin: 15px;
-  border: 1px solid #65d865;
+  border: 1px solid var(--primary-color);
   text-align: center;
   padding: 2rem;
 

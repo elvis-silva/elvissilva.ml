@@ -21,7 +21,7 @@ export const FooterBoby = styled.div`
 
 export const FooterText = styled.div`
 
-  color: #65d865;
+  color: var(--primary-color);
   font-size: 1em;
   align-self: center;
   text-align: center;
@@ -34,7 +34,7 @@ export const FooterStyled = styled.footer`
   bottom: 0;
   left: 0;
   background-color: #2b2b2b;
-  color: #65d865;
+  color: var(--primary-color);
   text-align: center;
   font-size: 0.8rem;
   font-weight: bold;
@@ -49,7 +49,7 @@ export const FooterStyled = styled.footer`
 export const Container = styled.div`
 
   margin: 15px;
-  border: 1px solid #65d865;
+  border: 1px solid var(--primary-color);
   text-align: center;
   padding: 2rem;
 

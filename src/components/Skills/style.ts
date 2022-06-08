@@ -11,33 +11,36 @@ export const SkillsBody = styled.div`
 
   &:before {
     content: '<Skills>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     position: absolute;
 
     @media screen and (max-width: 768px) {
-      margin-left: 0;
-      left: 0.5em;
+      left: 4.6em;
+      font-size: 1.2rem;
+      margin-top: -2em;
     }
   }
 
   &:after {
     content: '</Skills>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     position: absolute;
     bottom: 1em;
 
     @media screen and (max-width: 768px) {
-      left: 0.5em;
+      left: 4.5em;
+      font-size: 1.2rem;
+      bottom: 7em;
     }
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 0 1em 2em 1em;
+    margin: 0 -2.5em;
   }
 
 `
@@ -50,7 +53,7 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
   padding-bottom: 3.5em;
   padding-left: 3.5rem;
   min-height: 100%;
-  width: 100%;
+  width: 50%;
   ${({ justify }) => justify && `
 
     justify-content: center;
@@ -59,20 +62,22 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
 
   &:before {
     content: "<div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
   
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: 2em;
+      font-size: 1.2rem;
+      margin-top: -1.5em;
+      margin-left: 1.3em;
     }
   }
 
   &:after {
     content: "</div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;
@@ -80,7 +85,8 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
 
     @media screen and (max-width: 768px) {
       align-self: flex-start;
-      margin-left: -2em;
+      margin-left: 1.5em;
+      font-size: 1.2rem;
     }
   }
 
@@ -93,10 +99,48 @@ export const SkillsContainer = styled.div<{ justify?: string }>`
 
 `
 
-export const Text = styled.div`
+export const Text = styled.p`
 
   font-size: 1.4em;
   line-height: 1.4em;
   padding-top: 1.3em;
+  text-align: justify;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    padding: 0.8em 0.8em;
+  }
+
+`
+
+export const Link = styled.a`
+
+  color: var(--primary-color);
+  font-weight: bold;
+
+  :active {
+    color: var(--secondary-color);
+  }
+
+`
+
+export const SphereContainer = styled.div`
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+  padding-left: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  width: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    align-self: center;
+    padding-left: 0;
+    padding-top: 2em;
+  }
 
 `

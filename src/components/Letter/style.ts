@@ -19,7 +19,7 @@ export const CustomLetter = styled.div<{ animated?: boolean }>`
   ${({ animated }) => 
     animated && `
 
-      color: #65d865;
+      color: var(--primary-color);
       animation-name: bounce;
       animation-timing-function: cubic-bezier(0.235, 0.76, 0.42, 1);
 

@@ -11,7 +11,7 @@ export const ContactBody = styled.div`
 
   &:before {
     content: '<Contact>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     left: 2em;
     position: absolute;
@@ -23,7 +23,7 @@ export const ContactBody = styled.div`
 
   &:after {
     content: '</Contact>';
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     left: 2em;
     position: absolute;
@@ -51,7 +51,7 @@ export const LeftContainer = styled.div`
 
   &:before {
     content: "<div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     margin-left: -2em;
     margin-bottom: 1em;
@@ -64,7 +64,7 @@ export const LeftContainer = styled.div`
 
   &:after {
     content: "</div>";
-    color: #659965;
+    color: var(--secondary-color);
     font-size: 1.8rem;
     align-self: flex-start;
     margin-left: -2em;
@@ -129,17 +129,17 @@ export const Input = styled.input`
   display: inline-block;
   width:100%;
   padding: 1em 1.4em;
-  border: 0.05em solid #65d865;
+  border: 0.05em solid var(--primary-color);
   border-radius: 0.5em;
   box-sizing: border-box;
   font-size: 0.8em;
   outline: none;
   transition: all 0.2s ease-in-out;
-  color: #65d865;
+  color: var(--primary-color);
   background-color: transparent;
 
   &:focus {
-    border: 0.2em solid #65d865;
+    border: 0.2em solid var(--primary-color);
   }
 
 `
@@ -149,8 +149,8 @@ export const Message = styled.textarea`
   margin: 1em 0;
   padding: 0.5em 0.7em;
   background-color: transparent;
-  color: #65d865;
-  border: 0.05em solid #65d865;
+  color: var(--primary-color);
+  border: 0.05em solid var(--primary-color);
   border-radius: 0.5em;
   box-sizing: border-box;
   font-size: 1.5em;
@@ -161,7 +161,7 @@ export const Message = styled.textarea`
   height: 7em;
 
   &:focus {
-    border: 0.2em solid #65d865;
+    border: 0.2em solid var(--primary-color);
   }
 
 `
@@ -182,8 +182,8 @@ export const SubmitRow = styled.div`
 
 export const SubmitButton = styled.button`
 
-  background-color: #65d865;
-  border-color: #65d865;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   color: #2b2b2b;
   border-radius: 0.5em;
   box-sizing: border-box;
@@ -236,7 +236,7 @@ export const Icon = styled.div`
 
 export const IconText = styled.div`
 
-  color: #65d865;
+  color: var(--primary-color);
   font-size: 1.7em;
   text-align: center;
   align-items: center;
@@ -251,7 +251,7 @@ export const IconText = styled.div`
 export const Container = styled.div`
 
   margin: 15px;
-  border: 1px solid #65d865;
+  border: 1px solid var(--primary-color);
   text-align: center;
   padding: 2rem;
 
