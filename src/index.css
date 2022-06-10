@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  background: var(--background-color);
 }
 
 html {
@@ -15,7 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2b2b2b;
+  background-color: var(--background-color);
   padding: 0;
   margin: 0;
   position: relative;

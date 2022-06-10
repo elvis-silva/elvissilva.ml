@@ -3,3 +3,7 @@
   --secondary-color: #657765;
   --background-color: #1a1a1a;
 }
+
+* {
+  background-color: var(--background-color);
+}
