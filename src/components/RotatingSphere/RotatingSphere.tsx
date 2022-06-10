@@ -34,7 +34,7 @@ function RotatingSphere(props: any) {
           initSpeed: "normal",
           useContainerInlineStyles: true,
           sectionContainer: "skills",
-          styles: { color: "#65d865" },
+          styles: { color: "red", background: "transparent" },
         }
       )
     })
