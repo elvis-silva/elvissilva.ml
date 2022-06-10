@@ -94,7 +94,7 @@ export const HomeContainer = styled.div<{ typing_direction?: string }>`
 
 export const TypeWriter = styled.div<{ typing_direction?: string }>`
 
-  font-size: 2.8em;
+  font-size: 5rem;
   color: var(--primary-color);
   max-width: fit-content;
   overflow: hidden;
@@ -134,14 +134,14 @@ export const TypeWriter = styled.div<{ typing_direction?: string }>`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 2.5rem;
   }
 
 `
 
 export const StyledText = styled.p<{ weight?: string }>`
 
-  font-size: 2.8em;
+  font-size: 5rem;
   color: white;
 
   ${({ weight }) => 
@@ -153,7 +153,7 @@ export const StyledText = styled.p<{ weight?: string }>`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 2.5rem;
   }
 
 `
