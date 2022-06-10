@@ -178,6 +178,7 @@ export const Photo = styled.img`
   height: 25rem;
   width: auto;
   border-radius: 50%;
+  border: 2px solid var(--primary-color);
   transition: 0.3s ease-in;
   align-self: center;
   margin-top: 6.6em;
