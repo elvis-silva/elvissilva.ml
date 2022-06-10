@@ -16,6 +16,12 @@ test('show menu container on navbar', () => {
   expect(container).toBeInTheDocument()
 })
 
+test('show hamburger in navbar', () => {
+  render(<Router><Navbar toggle={toggle}/></Router>)
+  let hamburger = screen.getByTestId('hamburger')
+  expect(hamburger).toBeInTheDocument()
+})
+
 test('show logo on navbar', () => {
   render(<Router><Navbar toggle={toggle}/></Router>)
   let logo = screen.getByTestId('logo')

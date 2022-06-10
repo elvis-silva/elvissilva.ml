@@ -5,7 +5,7 @@ import Logo from '../../assets/images/logo.png'
 
 export const Nav = styled.nav`
 
-  background-color: #2b2b2b;
+  background-color: var(--background-color);
   opacity: 98%;
   height: 5rem;
   display: flex;
@@ -29,11 +29,11 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   height: 5rem;
   width: 100%;
-  padding: 0 7rem 0 7rem;
+  padding: 0 7rem;
   z-index: 1;
 
   @media screen and (max-width: 1128px) {
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1.5rem;
   }
 
 `
@@ -59,6 +59,23 @@ export const NavMenu = styled.ul`
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+
+`
+
+export const MobileMenuHamburger = styled.div`
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: -0.1em;
+    right: -0.3em;
+    transform: translate(-100%, 50%);
+    font-size: 2em;
+    color: var(--primary-color);
+    cursor: pointer;
   }
 
 `

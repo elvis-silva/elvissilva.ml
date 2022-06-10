@@ -6,7 +6,7 @@ export const FooterBoby = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 0 3.5rem 0 3.5rem;
-  background-color: #2b2b2b;
+  background-color: transparent;
   min-height: 6em;
   height: fit-content;
   
@@ -33,7 +33,7 @@ export const FooterStyled = styled.footer`
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #2b2b2b;
+  background-color: transparent;
   color: var(--primary-color);
   text-align: center;
   font-size: 0.8rem;

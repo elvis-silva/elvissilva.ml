@@ -4,7 +4,7 @@ import { SkillsBody, SkillsContainer, Text, Link, SphereContainer } from "./styl
 
 const Skills = () => {
   return (
-    <SkillsBody data-testid='skills'>
+    <SkillsBody data-testid='skills' id='skills'>
       <SkillsContainer data-testid='container'>
         <StyledHeading data-testid='title'>Skills</StyledHeading>
         <Text data-testid='text'>

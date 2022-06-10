@@ -17,7 +17,7 @@ import {
 
 const Contact = () => {
   return (
-    <ContactBody data-testid='contact'>
+    <ContactBody data-testid='contact' id='contact'>
       <LeftContainer data-testid='left-container'>
         <StyledHeading data-testid='title'>Contato</StyledHeading>
         <Form data-testid='form'

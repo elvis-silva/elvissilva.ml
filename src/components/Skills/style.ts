@@ -29,7 +29,7 @@ export const SkillsBody = styled.div`
     font-size: 1.8rem;
     margin-left: -2em;
     position: absolute;
-    bottom: 1em;
+    bottom: 0;
 
     @media screen and (max-width: 768px) {
       left: 4.5em;

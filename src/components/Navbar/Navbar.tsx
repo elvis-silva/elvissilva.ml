@@ -1,11 +1,14 @@
 import { useCallback } from "react"
-import { Nav, NavContainer, NavMenu, NavItem, NavLogo, NavLink } from "./style"
+import { FaBars } from "react-icons/fa"
+import { Nav, NavContainer, NavMenu, NavItem, NavLogo, NavLink, MobileMenuHamburger } from "./style"
 
 interface NavbarProps {
   toggle: () => void
 }
 
 const Navbar = (props: NavbarProps) => {
+
+  const { toggle } = props
 
   const toTop = useCallback(async () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
@@ -15,21 +18,24 @@ const Navbar = (props: NavbarProps) => {
     <Nav data-testid='navbar'>
       <NavContainer data-testid='container'>
         <NavLogo data-testid='logo' to='/' onClick={toTop}/>
+        <MobileMenuHamburger data-testid='hamburger' onClick={toggle}>
+          <FaBars />
+        </MobileMenuHamburger>
         <NavMenu data-testid='nav-menu'>
           <NavItem data-testid='menu-inicio'>
-            <NavLink data-testid='link-inicio' to='inicio' spy={true} smooth={true} offset={-80}>Início</NavLink>
+            <NavLink data-testid='link-inicio' to='home' spy={true} smooth={true} offset={-80}>Início</NavLink>
           </NavItem>
           <NavItem data-testid='menu-sobre'>
-            <NavLink data-testid='link-sobre' to='sobre' spy={true} smooth={true} offset={-80}>Sobre</NavLink>
+            <NavLink data-testid='link-sobre' to='about' spy={true} smooth={true} offset={-80}>Sobre</NavLink>
           </NavItem>
           <NavItem data-testid='menu-skills'>
             <NavLink data-testid='link-skills' to='skills' spy={true} smooth={true} offset={-80}>Skills</NavLink>
           </NavItem>
           <NavItem data-testid='menu-projetos'>
-            <NavLink data-testid='link-projetos' to='projetos' spy={true} smooth={true} offset={-80}>Projetos</NavLink>
+            <NavLink data-testid='link-projetos' to='projects' spy={true} smooth={true} offset={-80}>Projetos</NavLink>
           </NavItem>
           <NavItem data-testid='menu-contato'>
-            <NavLink data-testid='link-contato' to='contato' spy={true} smooth={true} offset={-80}>Contato</NavLink>
+            <NavLink data-testid='link-contato' to='contact' spy={true} smooth={true} offset={-80}>Contato</NavLink>
           </NavItem>
         </NavMenu>
       </NavContainer>

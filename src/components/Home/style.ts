@@ -5,7 +5,7 @@ export const HomeBody = styled.div`
   display: flex;
   flex-direction: row;
   padding: 0 3.5rem 0 3.5rem;
-  background-color: #2b2b2b;
+  background-color: transparent;
   min-height: 100%;
   padding-bottom: 4rem;
   position: relative;

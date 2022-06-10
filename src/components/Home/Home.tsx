@@ -39,19 +39,17 @@ const Home = () => {
   }, [direction, text, index, timeInterval, typewritterStrings])
 
   return (
-    <div data-testid="home">
-      <HomeBody>
-        <HomeContainer>
-          <StyledText>Olá, 👋 sou</StyledText>
-          <StyledText weight='bold'>Elvis Silva</StyledText>
-          <TypeWriter key={Math.random().toString()} 
-          typing_direction={direction}
-          >
-            {text}
-          </TypeWriter>
-        </HomeContainer>
-      </HomeBody>
-    </div>
+    <HomeBody data-testid='home' id='home'>
+      <HomeContainer>
+        <StyledText>Olá, 👋 sou</StyledText>
+        <StyledText weight='bold'>Elvis Silva</StyledText>
+        <TypeWriter key={Math.random().toString()} 
+        typing_direction={direction}
+        >
+          {text}
+        </TypeWriter>
+      </HomeContainer>
+    </HomeBody>
   )
 }
 
