@@ -31,9 +31,11 @@ const Navbar = (props: NavbarProps) => {
           <NavItem data-testid='menu-skills'>
             <NavLink data-testid='link-skills' to='skills' spy={true} smooth={true} offset={-80}>Skills</NavLink>
           </NavItem>
-          <NavItem data-testid='menu-projetos'>
-            <NavLink data-testid='link-projetos' to='projects' spy={true} smooth={true} offset={-80}>Projetos</NavLink>
-          </NavItem>
+          {/* <NavItem data-testid='menu-projetos'>
+            <a href="https://github.com/elvis-silva" target={'_blank'} rel="noreferrer">
+              <NavLink data-testid='link-projetos' to='#' spy={true} smooth={true} offset={-80}>Projetos</NavLink>
+            </a>
+          </NavItem> */}
           <NavItem data-testid='menu-contato'>
             <NavLink data-testid='link-contato' to='contact' spy={true} smooth={true} offset={-80}>Contato</NavLink>
           </NavItem>

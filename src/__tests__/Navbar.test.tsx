@@ -70,17 +70,17 @@ test('show link-skills on navbar', () => {
   expect(linkSkills).toBeInTheDocument()
 })
 
-test('show menu-projetos on navbar', () => {
-  render(<Router><Navbar toggle={toggle}/></Router>)
-  let menuProjetos = screen.getByTestId('menu-projetos')
-  expect(menuProjetos).toBeInTheDocument()
-})
+// test('show menu-projetos on navbar', () => {
+//   render(<Router><Navbar toggle={toggle}/></Router>)
+//   let menuProjetos = screen.getByTestId('menu-projetos')
+//   expect(menuProjetos).toBeInTheDocument()
+// })
 
-test('show link-projetos on navbar', () => {
-  render(<Router><Navbar toggle={toggle}/></Router>)
-  let linkProjetos = screen.getByTestId('link-projetos')
-  expect(linkProjetos).toBeInTheDocument()
-})
+// test('show link-projetos on navbar', () => {
+//   render(<Router><Navbar toggle={toggle}/></Router>)
+//   let linkProjetos = screen.getByTestId('link-projetos')
+//   expect(linkProjetos).toBeInTheDocument()
+// })
 
 test('show menu-contato on navbar', () => {
   render(<Router><Navbar toggle={toggle}/></Router>)

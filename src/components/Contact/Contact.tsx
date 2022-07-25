@@ -58,19 +58,19 @@ const Contact = () => {
         </SubmitRow>
       </LeftContainer>
       <RightContainer data-testid='right-container'>
-        <IconContainer data-testid='icon-container-linkedin'>
+        <IconContainer data-testid='icon-container-linkedin' href='https://www.linkedin.com/in/elvis-silva-dev' target={'_blank'}>
           <Icon data-testid='linkedin-icon'>
             <AiFillLinkedin size={'3rem'}/>
           </Icon>
           <IconText data-testid='linkedin-icon-text'>Linkedin</IconText>
         </IconContainer>
-        <IconContainer data-testid='icon-container-github'>
+        <IconContainer data-testid='icon-container-github' href='https://github.com/elvis-silva' target={'_blank'}>
           <Icon data-testid='github-icon'>
             <AiFillGithub size={'3rem'}/>
           </Icon>
           <IconText>Github</IconText>
         </IconContainer>
-        <IconContainer data-testid='icon-container-email'>
+        <IconContainer data-testid='icon-container-email' href='mailto:elviscarlossouza@gmail.com'>
           <Icon data-testid='email-icon'>
             <AiOutlineMail size={'3rem'}/>
           </Icon>

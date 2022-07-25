@@ -249,13 +249,15 @@ export const SubmitButton = styled.button`
 
 `
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.a`
 
   display: flex;
   align-self: flex-start;
   width: fit-content;
   padding-left: 2em;
   gap: 0.5em;
+  color: var(--primary-color);
+  text-decoration: none;
   cursor: pointer;
 
   @media screen and (max-width: 768px) {
