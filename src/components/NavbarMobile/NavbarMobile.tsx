@@ -55,7 +55,7 @@ const NavbarMobile = (props: Props) => {
           >
             Skills
           </MobileNavbarLink>
-          <MobileNavbarLink 
+          {/* <MobileNavbarLink 
             to='projects'
             spy={true}
             smooth={true}
@@ -63,7 +63,7 @@ const NavbarMobile = (props: Props) => {
             onClick={toggle}
           >
             Projetos
-          </MobileNavbarLink>
+          </MobileNavbarLink> */}
           <MobileNavbarLink 
             to='contact'
             spy={true}
